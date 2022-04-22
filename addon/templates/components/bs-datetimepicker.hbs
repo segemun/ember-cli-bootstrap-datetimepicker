@@ -1,15 +1,15 @@
-{{#unless inline}}
+{{#unless this.inline}}
   <input
     type="text"
-    class="form-control {{if isMobile "bs-disable"}}"
-    disabled={{disabled}}
-    placeholder={{placeholder}}
-    readonly={{isMobile}}
+    class="form-control {{if this.isMobile "bs-disable"}}"
+    disabled={{this.disabled}}
+    placeholder={{this.placeholder}}
+    readonly={{this.isMobile}}
     onfocus={{action "focus"}}
   >
-  {{#if showIcon}}
+  {{#if this.showIcon}}
     <span class="input-group-addon">
-      <i class={{iconClasses}}></i>
+      <i class={{this.iconClasses}}></i>
     </span>
   {{/if}}
 {{/unless}}

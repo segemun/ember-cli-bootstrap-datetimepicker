@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { computed, get } from '@ember/object';
 import layout from '../templates/components/bs-datetimepicker';
 import DynamicAttributeBindings from '../-private/dynamic-attribute-bindings';
 
@@ -76,14 +76,6 @@ export default Component.extend(DynamicAttributeBindings, {
       if (this.change) {
         this.change(newDate);
       }
-    }).on('dp.show', e => {
-      if (this.show) {
-        this.show();
-      }
-    }).on('dp.hide', e => {
-      if (this.hide) {
-        this.hide();
-      }
     });
 
     this.addObserver('date', this, 'updateDate');
@@ -157,5 +149,15 @@ export default Component.extend(DynamicAttributeBindings, {
 
   updateViewMode() {
     this.picker().viewMode(this.get('viewMode'));
+  },
+
+  getWithDefault(param, defaultValue) {
+    let value = get(this, param);
+
+    if (value === undefined) {
+      value = defaultValue
+    }
+
+    return value;
   }
 });
