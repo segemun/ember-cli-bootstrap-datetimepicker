@@ -32,7 +32,7 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "btecu-eonasdan-bootstrap-datetimepicker": "4.17.50",
+    "btecu-eonasdan-bootstrap-datetimepicker": "github:segemun/bootstrap-datetimepicker#3affc1a45627a1dfe8d2222025c72b34ca65aa25",
     "ember-cli-babel": "^7.13.0",
     "ember-cli-htmlbars": "^4.0.8"
   },

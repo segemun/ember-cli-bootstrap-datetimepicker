@@ -2709,10 +2709,9 @@ bser@2.1.1:
   dependencies:
     node-int64 "^0.4.0"
 
-btecu-eonasdan-bootstrap-datetimepicker@4.17.50:
+"btecu-eonasdan-bootstrap-datetimepicker@github:segemun/bootstrap-datetimepicker#3affc1a45627a1dfe8d2222025c72b34ca65aa25":
   version "4.17.50"
-  resolved "https://registry.yarnpkg.com/btecu-eonasdan-bootstrap-datetimepicker/-/btecu-eonasdan-bootstrap-datetimepicker-4.17.50.tgz#11e2e9da200638d2634857303d5f1653abe794e3"
-  integrity sha512-/5Cp+sAYCRpxs6ExmYH5DkGOfvZ7uSDWRazQ8DzIezUE5YTNdg98rpQdYhh2lpnS9SuBYs9xpGXwAAw3GZj/kw==
+  resolved "https://codeload.github.com/segemun/bootstrap-datetimepicker/tar.gz/3affc1a45627a1dfe8d2222025c72b34ca65aa25"
 
 buffer-alloc-unsafe@^1.1.0:
   version "1.1.0"
